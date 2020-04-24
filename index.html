@@ -14,12 +14,42 @@
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+        <link rel="audio" href="assets/audio/blurb.mp3">
 
         <!-- JAVASCRIPT -->
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
     
+
+        <style>
+            nav#nav1{ margin-top: 24px; }
+            nav#nav1 > a{ background:rgb(140, 209, 186); color:#000; padding:10px; text-decoration:none; border-radius:5px; font-family:"Arial Black", Gadget, sans-serif; }
+            nav#nav1 > a:hover{ background: #800080; }
+            nav#nav1 > a:active{ background: #c249c2; }
+            </style>
+            <script>
+            var blurb = new Audio();
+            blurb.src = 'assets/audio/blurb.mp3';
+            </script>
+
+    
+
+
     </head>
+   
     <body>
+
+      
+        <nav id="nav1">
+            <a href="blurb.mp3" onmousedown="blurb.play()">Start Intro</a>
+           
+        </nav>
+
+
+
+
         <div class="container">
         
             <h1>"Madame Desmay's Psychic Game"</h1>
