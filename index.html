@@ -3,32 +3,58 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Psychic Game HW 3">
+        <meta name="description" content="Homework 3">
         <meta name="author" content="Christine Munoz">
         
-        <title>Psychic Game Challenge</title>
+        <title>Psychic Game</title>
         
+        <link rel="icon" href="assets/images/psychicmind.jpg">
+
         <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-        <link rel="stylesheet" type="text/css" href="https://fonts.    ">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-        
+
+
+        <!-- JAVASCRIPT -->
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
     </head>
     <body>
         <div class="container">
-            <h1>Psychic Game Challenge</h1>
+        
+            <h1>"Madame Desmay's Psychic Game"</h1>
+            
+            <div id="userStats">
+                <p>Wins: <strong><span id="numWins"></span></strong></p>
+                <p>Losses: <strong><span id="numLosses"></span></strong></p>
+            </div>
+            
+            <p><b></b>Guess "Which Letter" I'm thinking of......??</p>
+            <p>-You have 10 tries to guess the letter. </p>
+            <p>-Press a letter key from A to Z to play!</p>
+            
+            <br>
+            
+            <p>Number of tries left: <strong><span id="numTriesLeft"></span></strong></p>
+            <p>Your guesses so far:</p>
+            <p><strong><span id="guesses"></span></strong></p>
 
-
-
-
-
+            <p>(Hint: Na Na Na Na! Guess again!)</p>
         </div>
+        
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
+   
+        <!-- FOOTER -->
 
-
-
-
-
+        <footer class="sticky-footer">
+        <p class=" footer-style">
+            <br> <br> <br><br>
+            <strong>© Copywrite Christine Munoz - Psychic Game</strong> <br>
+            <a href="https://github.com/christineZ5" target="_blank">GitHub Repo</a>
+            |
+            <a href="https://github.com/christineZ5" target="_blank">Portfolio</a>
+        </p>
+    </footer>
+    
     </body>
-
-
-<html>
+</html>

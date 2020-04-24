@@ -1,1 +1,98 @@
-/*It Worked!*/
+:root {
+    /* Define color scheme */
+    --color-mint-green    : #228B22;
+    --color-text          : #228B22;
+    --color-text-highlight: #800080;
+
+}
+
+body {
+    color      : var(--color-text);
+    font-family: "Architects Daughter", cursive;
+    font-size  : 30px;
+
+    background-attachment: fixed;
+    background-image: url("https://d.newsweek.com/en/full/1318327/psychic-fortune-telling.jpg");
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+
+}
+.darken {
+    background-image:
+    linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url("https://d.newsweek.com/en/full/1318327/psychic-fortune-telling.jpg");
+}
+
+/* Total width of 640px */
+.container {
+    width  : 520px;
+    margin : auto;
+    padding: 60px 0;
+
+}
+
+h1 {
+    
+    font-family   : "The Girl Next Door", cursive;
+    font-size     : 1.8em;
+    font-weight   : bold;
+    letter-spacing: 0.02em;
+
+    margin-bottom : 5%;
+}
+
+/* letter spacing in bowerse */
+
+
+@-moz-document url-prefix() {
+h1 {
+    letter-spacing: 0;
+}
+}
+
+p {
+    color         : var(--color-dimgray/dimgray);
+    letter-spacing: 0.015em;
+    line-height   : 1.3em;
+
+    margin-bottom : 2%;
+}
+
+p strong {
+    color      : var(--color-text-highlight);
+    font-weight: bold;
+}
+
+#userStats p {
+    float        : left;
+    width        : 50%;
+    margin-bottom: 7.5%;
+}
+
+#guesses {
+    letter-spacing: 0.75em;
+}
+
+.sticky-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+}
+
+.footer-style {
+    color         : var(--color-mint-green);
+    background-color: #4aaaa5;
+    border-top: 3px double #000;
+    opacity: 0.55;
+    font-family   : "The Girl Next Door", cursive;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    padding: 10px;
+}
